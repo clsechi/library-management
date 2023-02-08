@@ -1,5 +1,5 @@
-# Rails Directory Structure Guide
+# Library Management
 
-This repo has been archived for future research.
+This is a working in progress
 
-The implementation will continue in [library-managament](https://github.com/clsechi/library-management)
+An example project on how to adapt clean architecture to the Rails architecture
