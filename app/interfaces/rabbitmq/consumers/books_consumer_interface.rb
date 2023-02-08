@@ -6,7 +6,7 @@ module Rabbitmq
       include Errors::Handlers::Rabbitmq::Raised
 
       def create!(msg)
-        Book::CreateBookUseCase.new(
+        Books::CreateBookUseCase.new(
           title: msg[:title],
           author: msg[:author],
           year: msg[:year],
@@ -15,7 +15,7 @@ module Rabbitmq
       end
 
       def update!(msg)
-        Book::UpdateBookUseCase.new(
+        Books::UpdateBookUseCase.new(
           id: msg[:id],
           title: msg[:title],
           quantity: msg[:quantity]

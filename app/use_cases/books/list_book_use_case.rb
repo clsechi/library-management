@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   class ListBookUseCase
     def initialize(params: {
       filters: {},
@@ -21,7 +21,7 @@ module Book
     attr_reader :filters, :pagination
 
     def find_books
-      Book::BookRepository.find_all(
+      Books::BookRepository.find_all(
         filters: filters,
         pagination: pagination
       )

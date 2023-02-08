@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   module BookRepository
     # include RepositoryErrorHandler Here we can use a custom error handler to correct map ActiveRecord errors
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   class BookPresenter
     def initialize(books:)
       @books = books

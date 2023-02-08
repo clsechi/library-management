@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   class FindBookUseCase
     include ActiveModel::Validations
 
@@ -23,7 +23,7 @@ module Book
     attr_reader :id
 
     def find_book!
-      Book::BookRepository.find!(
+      Books::BookRepository.find!(
         id: id
       )
     end

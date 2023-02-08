@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   class CreateBookUseCase
     include ActiveModel::Validations
 
@@ -37,7 +37,7 @@ module Book
     end
 
     def create_book!(updated_year)
-      Book::BookRepository.create!(
+      Books::BookRepository.create!(
         title: title,
         author: author,
         year: year || updated_year,

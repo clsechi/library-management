@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe(Book::CreateBookUseCase, unit: true) do
+RSpec.describe(Books::CreateBookUseCase, unit: true) do
   describe '#call' do
     let(:book) { build(:book) }
     let(:params) do
@@ -13,7 +13,7 @@ RSpec.describe(Book::CreateBookUseCase, unit: true) do
     end
 
     it 'return correct data' do
-      described_class.new(params).call
+      described_class.new(params: params).call!
     end
   end
 end

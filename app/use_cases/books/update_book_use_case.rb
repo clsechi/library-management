@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Book
+module Books
   class UpdateBookUseCase
     include ActiveModel::Validations
 
@@ -33,7 +33,7 @@ module Book
     end
 
     def update_book!
-      Book::BookRepository.update!(
+      Books::BookRepository.update!(
         id: id,
         title: title,
         quantity: quantity
